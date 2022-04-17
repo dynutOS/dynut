@@ -9,8 +9,8 @@
 - see the build [instructions](https://github.com/dynutOS/dynut/blob/main/Docs/building.md)
 
 ## Contributing
+- Check out the [coding style](https://github.com/dynutOS/dynut/blob/main/Docs/codestyle.md) before contributing to our project
 - Love this project check out the [contributing.md]() for more details about contributions
-
 
 ## License
 - dynutOS is licensed under MIT:
