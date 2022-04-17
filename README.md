@@ -1,2 +1,3 @@
 # dynut
-The dynut operating system
+- An Unix Based Operating System Built Using C++
+
