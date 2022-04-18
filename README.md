@@ -2,14 +2,14 @@
 - An Unix Based Operating System Built Using C++
 
 
-<img src="Docs/dynut.png"></img>
+<img src="docs/dynut.png"></img>
 
 ## Building:
 - want to try out dynutOS??
-- see the build [instructions](https://github.com/dynutOS/dynut/blob/main/Docs/building.md)
+- see the build [instructions](https://github.com/dynutOS/dynut/blob/master/docs/building.md)
 
 ## Contributing
-- Check out the [coding style](https://github.com/dynutOS/dynut/blob/main/Docs/codestyle.md) before contributing to our project
+- Check out the [coding style](https://github.com/dynutOS/dynut/blob/master/docs/codestyle.md) before contributing to our project
 - Love this project check out the [contributing.md]() for more details about contributions
 
 ## License
