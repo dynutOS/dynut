@@ -1,5 +1,8 @@
 use alloc::vec::Vec;
 
+/**
+ * font[height, size, data]
+ */
 #[derive(Clone)]
 pub struct Font {
     pub height: u8,
@@ -23,4 +26,11 @@ pub fn from_bytes(buf: &[u8]) -> Result<Font, ()> {
     };
 
     let n = (4 + size * height as u16) as uszie;
+
+    if buf.len() < n {
+        return Err(());
+    }
+    let data = buf[4..n].to_vec();
+
+    Ok(Font { height, size, data })
 }
