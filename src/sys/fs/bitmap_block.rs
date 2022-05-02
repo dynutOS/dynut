@@ -15,4 +15,19 @@ impl BitmapBlock {
         let i = addr - sb.data_area();
         sb.bitmap_area() + (i / size / 8)
     }
+
+    fn buffer_index(addr: u32) -> usize {
+        let sb = SuperBlock::read();
+        let i = (addr - sb.data_area()) as usize;
+        i % sb.block_size() as usize
+    }
+}
+
+pub fn free_all() {
+    let sb = SuperBlock::read();
+    let a = sb.bitmap_area();
+    let b = sb.data_area();
+    for addr in a..b {
+        Block::new(addr).write();
+    }
 }
