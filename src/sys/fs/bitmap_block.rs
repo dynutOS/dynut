@@ -1,3 +1,9 @@
+/**
+ * @filename: font.rs
+ * @author: Krisna Pranav
+ * @license: MIT Copyright (c) 2022 dynutOS, Krisna Pranav
+ */
+
 use super::block::Block;
 use super::super_block;
 use super::super_block::SuperBlock;

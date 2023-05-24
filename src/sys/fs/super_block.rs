@@ -1,6 +1,12 @@
+/**
+ * @filename: font.rs
+ * @author: Krisna Pranav
+ * @license: MIT Copyright (c) 2022 dynutOS, Krisna Pranav
+ */
+
 #[derive(Debug)]
 pub struct SuperBlock {
-    signature: &'static[u8; 8],
+    signature: &'static [u8; 8],
     version: u8,
     block_size: u32,
     pub block_count: u32,
