@@ -26,6 +26,7 @@
 *.a
 *.lib
 
+src/target
 # Executables
 *.exe
 *.out
@@ -37,3 +38,7 @@
 /target
 
 Cargo.lock
+
+# ide cache
+.vscode/
+.idea/

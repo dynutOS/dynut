@@ -1,0 +1,5 @@
+[workspace]
+members = ["dynut_syscall"]
+
+[profile.release]
+debug = true
