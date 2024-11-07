@@ -122,5 +122,47 @@ namespace DynutOS.System
 
             return timeStr;
         }
+
+        public static string TimeString(bool hour, bool min, bool sec) 
+        {
+            switch(Kernel.langSelected) 
+            {
+                case "fr_FR":
+                    return getTime24(hour, min, sec);
+                case "en_US":
+                    return getTime12(hour, min, sec);
+                case "n1_NL":
+                    return getTime24(hour, min, sec);
+                case "it_IT":
+                    return getTime12(hour, min, sec);
+                default:
+                    return getTime12(hour, min, sec);
+            }
+        }
+
+        public static string YearString()
+        {
+            int intyear = Year();
+            string stringyear = intyear.ToString();
+
+            if (stringyear.Length == 2) {
+                stringyear = "20" + stringyear;
+            }
+            return stringyear;
+        }
+
+        public static string MonthString()
+        {
+            int intmonth = Month();
+            string stringmonth = intmonth.ToString();
+
+            if (stringmonth.Length == 1) {
+                stringmonth = "0" + stringmonth;
+            }
+            
+            return stringmonth;
+        }
+
+        
     } // public static class Time
 } // namespace DynutOS.System
