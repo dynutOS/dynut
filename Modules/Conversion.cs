@@ -109,5 +109,28 @@ namespace DynutOS.Modules
             return result;
         }
 
+        public static string HexDump(byte[] bytes, int bytesPerLine = 16)
+        {
+            if (bytes == null) {
+                return "<null>";
+            }
+
+            int bytesLength = bytes.Length;
+
+            char[] HexChars = "0123456789ABCDEF".ToCharArray();
+
+            int firstHexColumn = 8 + 3;
+            int firstCharColumn = firstHexColumn + bytesPerLine * 3 + (bytesPerLine - 1) / 8 + 2;
+            int lineLength = firstCharColumn + bytesPerLine + Environment.NewLine.Length;
+
+            char[] line = (new String(' ', lineLength - Environment.NewLine.Length) + Environment.NewLine).ToCharArray();
+            int expectedLines = (bytesLength + bytesPerLine - 1) / bytesPerLine;
+            StringBuilder result = new StringBuilder(expectedLines * lineLength);
+
+            for (int i = 0; i < bytesLength; i += bytesPerLine) {
+                
+            }
+        }
+
     } // public static class Conversion
 } // namespace DynutOS.Modules
