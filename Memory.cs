@@ -20,5 +20,24 @@ namespace DynutOS.Core
         {
             TotalMemory = CPU.GetAmountOfRAM + 1;
         }
+
+        public void Monitor()
+        {
+            GetTotalMemory();
+            FreeMemory = TotalMemory - GetUsedMemory();
+            UsedPercentage = (GetUsedMemory() * 100) / TotalMemory;
+            FreePercentage = 100 - UsedPercentage;
+        }
+
+        public static uint GetFreeMemory()
+        {
+            return TotalMemory - GetUsedMemory()
+        }
+
+        public static uint GetUsedMemory() 
+        {
+            uint UsedRAM = CPU.GetEndOfKernel() + 1024;
+            return UsedRAM / div;
+        }
     } // public class Memory
 } // namespace DynutOS.Core

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DynutOS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8deb26b7d524366ca9cec243cbc55a38a6311b49")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85d6b98a9c887c86ee2c873b45e19e0ab933435c")]
 [assembly: System.Reflection.AssemblyProductAttribute("DynutOS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DynutOS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
