@@ -1,0 +1,101 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/krisnapranav/Projects/Github/dynut/DynutOS.csproj": {}
+  },
+  "projects": {
+    "/Users/krisnapranav/Projects/Github/dynut/DynutOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/krisnapranav/Projects/Github/dynut/DynutOS.csproj",
+        "projectName": "DynutOS",
+        "projectPath": "/Users/krisnapranav/Projects/Github/dynut/DynutOS.csproj",
+        "packagesPath": "/Users/krisnapranav/.nuget/packages/",
+        "outputPath": "/Users/krisnapranav/Projects/Github/dynut/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/krisnapranav/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Cosmos.System2": {
+              "target": "Package",
+              "version": "[10.0.0, )",
+              "noWarn": [
+                "NU1604",
+                "NU1605"
+              ]
+            },
+            "CosmosFtpServer": {
+              "target": "Package",
+              "version": "[1.0.9, )"
+            },
+            "CosmosHttp": {
+              "target": "Package",
+              "version": "[1.0.4, )"
+            },
+            "Zlib.Portable": {
+              "target": "Package",
+              "version": "[1.11.0, )"
+            },
+            "acryptohashnet": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "jzero": {
+              "target": "Package",
+              "version": "[0.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/8.0.10/libexec/sdk/8.0.110/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

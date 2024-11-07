@@ -1,0 +1,271 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "acryptohashnet/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/acryptohashnet.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/acryptohashnet.dll": {}
+        }
+      },
+      "CosmosFtpServer/1.0.9": {
+        "type": "package",
+        "dependencies": {
+          "Cosmos.System2": "0.1.0-localbuild20240131052412"
+        },
+        "compile": {
+          "lib/net6.0/CosmosFtpServer.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CosmosFtpServer.dll": {}
+        }
+      },
+      "CosmosHttp/1.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Cosmos.System2": "0.1.0-localbuild20231218113219",
+          "Zlib.Portable": "1.11.0"
+        },
+        "compile": {
+          "lib/net6.0/CosmosHttp.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/CosmosHttp.dll": {}
+        }
+      },
+      "JZero/0.4.5": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/jzero.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/jzero.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Zlib.Portable/1.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "acryptohashnet/2.0.0": {
+      "sha512": "sj2NW+IL3pDCFunj5XAhlid+B5aQidJ5J5+vUE/9xg4+UEg1Tnhi5YkkHN9BlskWyC8kwJ6K4+YVvFWOR0zcWA==",
+      "type": "package",
+      "path": "acryptohashnet/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "acryptohashnet.2.0.0.nupkg.sha512",
+        "acryptohashnet.nuspec",
+        "lgpl1.0.txt",
+        "lib/net6.0/acryptohashnet.dll",
+        "lib/netstandard2.0/acryptohashnet.dll",
+        "lib/netstandard2.1/acryptohashnet.dll",
+        "readme.md"
+      ]
+    },
+    "CosmosFtpServer/1.0.9": {
+      "sha512": "LSng4ldsAUGniIxb6GM0akQuRxuWHLbsMPPWjHgNZny1bl8L+OgjozabAxAx0bAsJlvmSgqSM0oP9GlHdT0PdQ==",
+      "type": "package",
+      "path": "cosmosftpserver/1.0.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "cosmosftpserver.1.0.9.nupkg.sha512",
+        "cosmosftpserver.nuspec",
+        "icon.png",
+        "lib/net6.0/CosmosFtpServer.dll",
+        "resources/icon.png"
+      ]
+    },
+    "CosmosHttp/1.0.4": {
+      "sha512": "WrsoH7PHrhEeHcf0R1xNM1i/eo8MPgC108WsJ6mcCCIR/4bxG6MlqiVSw1Uda2f/b1i9EZqONqDcVUGSSQd5wQ==",
+      "type": "package",
+      "path": "cosmoshttp/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "cosmoshttp.1.0.4.nupkg.sha512",
+        "cosmoshttp.nuspec",
+        "icon.png",
+        "lib/net6.0/CosmosHttp.dll",
+        "resources/icon.png"
+      ]
+    },
+    "JZero/0.4.5": {
+      "sha512": "U0vUjyHcIoVvC5dcuGTLnbbxeMSxUnqQNhjC7OERIyzbSn+RKPX9mbmuMYkFxCkRcuSERKvSj/bojBreOcz2iQ==",
+      "type": "package",
+      "path": "jzero/0.4.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "jzero.0.4.5.nupkg.sha512",
+        "jzero.nuspec",
+        "lib/netcoreapp3.1/jzero.dll",
+        "lib/netcoreapp3.1/jzero.xml"
+      ]
+    },
+    "Zlib.Portable/1.11.0": {
+      "sha512": "T8FoSv/7DuP4ItfacfiD1a5Ra29e3ogZnK8KnaOhxooxHbNOf0Kj00DIyQqZupzVGB5BkluKJ1/aAFVtMYFUTw==",
+      "type": "package",
+      "path": "zlib.portable/1.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll",
+        "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.xml",
+        "zlib.portable.1.11.0.nupkg.sha512",
+        "zlib.portable.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Cosmos.System2 >= 10.0.0",
+      "CosmosFtpServer >= 1.0.9",
+      "CosmosHttp >= 1.0.4",
+      "Zlib.Portable >= 1.11.0",
+      "acryptohashnet >= 2.0.0",
+      "jzero >= 0.4.5"
+    ]
+  },
+  "packageFolders": {
+    "/Users/krisnapranav/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/krisnapranav/Projects/Github/dynut/DynutOS.csproj",
+      "projectName": "DynutOS",
+      "projectPath": "/Users/krisnapranav/Projects/Github/dynut/DynutOS.csproj",
+      "packagesPath": "/Users/krisnapranav/.nuget/packages/",
+      "outputPath": "/Users/krisnapranav/Projects/Github/dynut/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/krisnapranav/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Cosmos.System2": {
+            "target": "Package",
+            "version": "[10.0.0, )",
+            "noWarn": [
+              "NU1604",
+              "NU1605"
+            ]
+          },
+          "CosmosFtpServer": {
+            "target": "Package",
+            "version": "[1.0.9, )"
+          },
+          "CosmosHttp": {
+            "target": "Package",
+            "version": "[1.0.4, )"
+          },
+          "Zlib.Portable": {
+            "target": "Package",
+            "version": "[1.11.0, )"
+          },
+          "acryptohashnet": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
+          "jzero": {
+            "target": "Package",
+            "version": "[0.4.5, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.35, 6.0.35]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.35, 6.0.35]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/8.0.10/libexec/sdk/8.0.110/RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Cosmos.System2. No packages exist with this id in source(s): nuget.org",
+      "libraryId": "Cosmos.System2",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Zlib.Portable 1.11.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Zlib.Portable",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

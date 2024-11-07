@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "dgSpecHash": "zjqkDJIT0gGbhfwlDWpX5GOZmNznN0Q6GPIBiFSb8RyS/Z3cfCogCEkMVby8GMCysmrDTA/F1n4CMq2jpWzhmw==",
+  "success": false,
+  "projectFilePath": "/Users/krisnapranav/Projects/Github/dynut/DynutOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/krisnapranav/.nuget/packages/acryptohashnet/2.0.0/acryptohashnet.2.0.0.nupkg.sha512",
+    "/Users/krisnapranav/.nuget/packages/cosmosftpserver/1.0.9/cosmosftpserver.1.0.9.nupkg.sha512",
+    "/Users/krisnapranav/.nuget/packages/cosmoshttp/1.0.4/cosmoshttp.1.0.4.nupkg.sha512",
+    "/Users/krisnapranav/.nuget/packages/jzero/0.4.5/jzero.0.4.5.nupkg.sha512",
+    "/Users/krisnapranav/.nuget/packages/zlib.portable/1.11.0/zlib.portable.1.11.0.nupkg.sha512",
+    "/Users/krisnapranav/.nuget/packages/microsoft.netcore.app.ref/6.0.35/microsoft.netcore.app.ref.6.0.35.nupkg.sha512",
+    "/Users/krisnapranav/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.35/microsoft.aspnetcore.app.ref.6.0.35.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Cosmos.System2. No packages exist with this id in source(s): nuget.org",
+      "libraryId": "Cosmos.System2",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Zlib.Portable 1.11.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Zlib.Portable",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
