@@ -163,6 +163,16 @@ namespace DynutOS.System
             return stringmonth;
         }
 
-        
+        public static string DayString() 
+        {
+            int intday = DayOfMonth();
+            string stringday = intday.ToString();
+            
+            if (stringday.Length == 1) {
+                stringday = "0" + stringday;
+            }
+            
+            return stringday;
+        }
     } // public static class Time
 } // namespace DynutOS.System
