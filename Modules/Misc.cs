@@ -39,5 +39,45 @@ namespace DynutOS.System.Utils
                 return false;
             }
         }
+
+        public static List<string> ParseCommandLine(string cmdLine)
+        {
+            var args = new List<string>();
+            
+            if (string.IsNullOrWhiteSpace(cmdLine)) {
+                return args;
+            }
+
+            var currentArg = new StringBuilder();
+            bool inQuotedArg = false;
+
+            for(int i = 0; i < cmdLine.Length; i++) {
+                if (cmdLine[i] == '"') {
+                    if (inQuotedArg) {
+                        args.Add(currentArg.ToString());
+                        currentArg = new StringBuilder();
+                        inQuotedArg = false;
+                    } else {
+                        inQuotedArg = true;
+                    }
+                } else if(cmdLine[i] == ' ') {
+                    if (inQuotedArg) {
+                        currentArg.Append(cmdLine[i]);
+                    } else if(currentArg.Length > 0) {
+                        args.Add(currentArg.ToString());
+                        currentArg = new StringBuilder();
+                    }
+                } else {
+                    currentArg.Append(cmdLine[i]);
+                }
+            }
+
+            if (currentArg.Length > 0) {
+                args.Add(currentArg.ToString());
+            }
+
+            return args;
+        }
+        
     } // public class Misc
 } // namespace DynutOS.System.Utils
