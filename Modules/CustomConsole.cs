@@ -19,7 +19,7 @@ namespace DynutOS.System
         {
             if (BootConsole != null) {
                 BootConsole.Foreground = ConsoleColor.Cyan;
-                BootConsole.Write("[Info] ");
+                BootConsole.Write("Info: ");
                 BootConsole.Foreground = ConsoleColor.White;
                 BootConsole.Write(text + "\n");
                 BootConsole.Draw();
@@ -27,13 +27,70 @@ namespace DynutOS.System
                 Kernel.Canvas.Display();
             } else {
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.Write("[Info] ");
+                Console.Write("Info: ");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.Write(text + "\n");
             }
 
             Logs.DoOSLog("[Info] " + text);
         }
-        
+
+        public static void WriteLineWarning(string text)
+        {
+            if (BootConsole != null) {
+                BootConsole.Foreground = ConsoleColor.Yellow;
+                BootConsole.Write("Warning: ");
+                BootConsole.Foreground = ConsoleColor.White;
+                BootConsole.Write(text + "\n");
+                BootConsole.Draw();
+                Kernel.Canvas.DrawImage(BootConsole.GetBuffer(), 0, 0);
+                Kernel.Canvas.Display();
+            } else {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("Warning: ");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write(text + "\n");
+            }
+            Logs.DoOSLog("Warning: " + text);
+        }
+
+        public static void WriteLineWarning(string text)
+        {
+            if (BootConsole != null) {
+                BootConsole.Foreground = ConsoleColor.Yellow;
+                BootConsole.Write("Warning: ");
+                BootConsole.Foreground = ConsoleColor.White;
+                BootConsole.Write(text + "\n");
+                BootConsole.Draw();
+                Kernel.Canvas.DrawImage(BootConsole.GetBuffer(), 0, 0);
+                Kernel.Canvas.Display();
+            } else {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("Warning: ");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write(text + "\n");
+            }
+            Logs.DoOSLog("Warning: " + text);
+        }
+
+        public static void WriteLineOK(string text)
+        {
+            if (BootConsole != null) {
+                BootConsole.Foreground = ConsoleColor.Green;
+                BootConsole.Write("OK: ");
+                BootConsole.Foreground = ConsoleColor.White;
+                BootConsole.Write(text + "\n");
+                BootConsole.Draw();
+                Kernel.Canvas.DrawImage(BootConsole.GetBuffer(), 0, 0);
+                Kernel.Canvas.Display();
+            } else {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write("Ok: ");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write(text + "\n");
+            }
+            Logs.DoOSLog("Ok: " + text);
+        }
+
     } // public class CustomConsole
 } // namespace DynutOS.System
