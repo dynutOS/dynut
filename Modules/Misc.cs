@@ -29,5 +29,15 @@ namespace DynutOS.System.Utils
                 return false;
             }
         }
+
+        public static bool IsIPv4Address(string ip)
+        {
+            string[] items = ip.Split('.');
+            if (IsIPv4Address(items)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
     } // public class Misc
 } // namespace DynutOS.System.Utils
