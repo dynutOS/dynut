@@ -92,5 +92,24 @@ namespace DynutOS.System
             Logs.DoOSLog("Ok: " + text);
         }
 
+        public static void WriteLineWarning(string text)
+        {
+            if (BootConsole != null) {
+                BootConsole.Foreground = ConsoleColor.DarkRed;
+                BootConsole.Write("Error: ");
+                BootConsole.Foreground = ConsoleColor.White;
+                BootConsole.Write(text + "\n");
+                BootConsole.Draw();
+                Kernel.Canvas.DrawImage(BootConsole.GetBuffer(), 0, 0);
+                Kernel.Canvas.Display();
+            } else {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.Write("Error: ");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write(text + "\n");
+            }
+            Logs.DoOSLog("Warning: " + text);
+        }
+
     } // public class CustomConsole
 } // namespace DynutOS.System
