@@ -108,7 +108,7 @@ namespace DynutOS.System
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.Write(text + "\n");
             }
-            Logs.DoOSLog("Warning: " + text);
+            Logs.DoOSLog("Error: " + text);
         }
 
     } // public class CustomConsole
