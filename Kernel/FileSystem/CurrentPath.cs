@@ -2,7 +2,7 @@
  * @file CurrentPath.cs
  * @author Krisna Pranav
  * @brief Current Path
- * @version 6.0
+ * @version 6.1
  * @date 2023-09-10
  * 
  * @copyright Copyright (c) 2022-2024 dynutOS Developers, Krisna Pranav
